@@ -1,0 +1,247 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: keifont !important;
+    background-color: #232020 !important;
+    color: white;
+}
+@font-face {
+    font-family: 'keifont';
+    src: url('imagenes/keifont.ttf') format('truetype'),
+         url('imagenes/keifont.ttf') format('truetype'); 
+}
+
+header{
+
+    margin-top: 80px;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+  }
+
+p {
+    text-align: center;
+}
+
+.menu
+{
+    background-color: rgba(0, 0, 0, 0.205);
+    color: #8d82a8;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    list-style-type: none;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 2px 5px 5px 5px;
+    box-shadow: 0px 3px 10px 1px rgb(111, 0, 255);
+}
+.menu li
+{
+    font-size: 24px;
+    display: inline;
+    margin-left: 20px;
+}
+
+.menu li a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer
+{
+    background-color: rgba(0, 0, 0, 0.205);
+    color: #8d82a8;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    list-style-type: none;
+    box-sizing: border-box;
+    padding-top: 0px;
+    border-radius: 2px 5px 5px 5px;
+    box-shadow: 0px 3px 10px 1px rgb(111, 0, 255);
+}
+.footer li
+{
+    font-size: 12px;
+    display: inline;
+    margin: auto;
+}
+
+.footer li a
+{
+    color: #8d82a8;
+    text-decoration: none; 
+    padding: 5px;
+}
+
+.content h2{
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 15px;
+    text-shadow: rgb(111, 0, 255);
+    text-shadow: px 15px 3px black;
+    text-align: center;
+}
+
+h3{
+    background-color: rgba(0, 0, 0, 0.205);
+    color: #ffffff;
+    width: 70%;
+    height: 35px;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 2px 5px 5px 5px;
+    box-shadow: 0px 3px 10px 1px rgb(111, 0, 255);
+    text-shadow: 3px 3px 3px black;
+}
+
+hr{
+    background-color: #4800ff;
+    height: 5px;
+    border: none;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    border-radius: 2px 5px 5px 5px;
+    box-shadow: 0px 3px 10px 1px #4800ff;
+}
+
+ul{
+    list-style-type: none;
+    color: #8d82a8;
+}
+
+#tablac {
+    border-spacing: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+
+th {
+    background-color: rgb(111, 0, 255) !important;
+    color: white !important;
+}
+
+th {
+    width: 350px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid rgb(111, 0, 255);
+ }  
+
+ td {
+    width: 350px;
+    text-align: center !important;
+    padding: 5px !important;
+    border: 1px solid rgb(111, 0, 255);
+ }
+
+.thover:hover{
+    background-color: #4600f76c;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+/*video {
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+  
+}
+.portada {
+    border: 1px solid #000;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 1px 1px rgb(111, 0, 255);
+}*/
+
+.Section_top{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(imagenes/image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: stretch;
+    animation: change 10s infinite ease-in-out;
+}
+
+.content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+
+}
+
+.content a{
+    background: #858585;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.content a:hover{
+    background: purple;
+    color: white;
+
+
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url(/imagenes/img1.jpg);
+    }
+    20%
+    {
+        background-image: url(/imagenes/img2.jpg);
+    }
+    40%
+    {
+        background-image: url(/imagenes/img3.avif);
+    }
+    60%
+    {
+        background-image: url(/imagenes/img4.jpg);
+    }
+    80%
+    {
+        background-image: url(/imagenes/img5.jpg);
+    }
+    100%
+    {
+        background-image: url(/imagenes/img1.jpg);
+    }
+}
